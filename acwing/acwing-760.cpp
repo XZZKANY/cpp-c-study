@@ -1,8 +1,12 @@
 #include <iostream>
+#include <string.h>
 
-using namespace std ;
+using namespace std;
 
 int main()
 {
-    return 0; 
+    string a;
+    getline(cin, a);
+    cout << a.size() <<  '\n';
+
 }
