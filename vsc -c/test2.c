@@ -1,13 +1,14 @@
 #include <stdio.h>
-int const d = 110 ;
+#include <string.h>
 int main()
 {
-  int m, n;
-  scanf("%d %d", m, n);
-  int dx[] = {0, -1, 0, 1}, dy[] = {1, 0 , -1, 0};
-  int c[d][d];
-  for (int i = 1; i <= m * n; i ++)
-  {
-
-  }
+  double number;
+  scanf("%lf", &number);
+  char buffer[20];
+  sprintf(buffer, "%.3lf", number); // 将数字格式化为字符串
+  int len = strlen(buffer); // 获取字符串的长度
+  printf("[%0.3lf]\n", number);
+  printf("[%-12.3lf]\n", number);
+  printf("[%*s%.3lf%*s ]\n", (12 - len) / 2, "", number, (12 - len) / 2, "");
+  printf("[%12.3lf]\n", number);
 }
