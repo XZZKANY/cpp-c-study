@@ -5,7 +5,8 @@ using namespace std;
 int main()
 {
     string str, substr, newstr1 = "", newstr2 = "";
-    cin >> str >> substr ;
+    
+    while (cin >> str >> substr, str){
     
     int maxindex= 0, maxcount = 0;
     
@@ -21,6 +22,7 @@ int main()
     cout << newstr1 + substr + newstr2 << '\n' ;
 
     return 0;
+    }
         
 
 }
