@@ -47,8 +47,9 @@ int main()
     for (int i = 0; m[i]; i ++ )
     {
         int a = find_smallest_num(m[i]);
-        int b = (int) log10(abs(a * i)) + 1;
+        int b = (int) log10(abs(a * m[i])) + 1;
 
+        if (m[i] * a == )
         cout << a << ' ' << b  ;
         cout << endl;
     }

@@ -1,18 +1,21 @@
 #include <stdio.h>
-
+#include <math.h>
 int main()
 {
-    double A, B, C, D;
+    char a;
+    long c;
+    int b;
+    float d;
+    double e;
+    int cns = scanf("%c%ld%d%f", &a, &c, &b, &d, & e);
+    printf("%d\n", cns);
+    printf("%c,%ld,%d,%f,%lf\n", a, c, b, d, e);
+    
+    int total_characters = 2 + 2 * (cns - 1) + 15;
+    
+    printf("%d\n", total_characters);
+    printf("%d\n", 19 );
+    
    
-    scanf("%lf,%lf", &A, &B);
-    C = A + B;
-    printf("%-10.6lf + %10.6lf = %-10.2lf\n", A, B, C);
-
-
-    A = ((int)(A * 100 + 0.5)) / 100.0;
-    B = ((int)(B * 100 + 0.5)) / 100.0;
-    D = A + B;
-    printf("%-10.6f + %10.6f = %-10.2f\n", A, B, D);
-
-    return 0;
+    
 }
